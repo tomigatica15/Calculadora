@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora -- Html, Css & JavaScript</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="enter_numbers">
+        <label for="">Numero Primario: </label><br>
+        <input type="number" id="number1" required><br><br>
+        <label for="">Numero Secundario: </label><br>
+        <input type="number" id="number2" required> <br><br>
+
+        <select class="selec" id="operators">
+            <option value="plus">Suma</option>
+            <option value="minus">Resta</option>
+            <option value="division">Division</option>
+            <option value="mult">Multiplicacion</option>
+        </select>
+
+        <hr>
+        <button onclick="calculator()">Resultado</button>
+        <input class="final_result" type="text" id="result" readonly onmousedown="return false;">
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
